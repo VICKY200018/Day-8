@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .red-asterisk {
+            color: red;
+        }
+        .star-rating {
+            color: gold;
+        }
+        .survey-table th, .survey-table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .comments-box {
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        
+        <form>
+            <div class="form-group">
+                <label><strong>Name <span class="red-asterisk">*</span></strong></label>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First">
+                        <small>First</small>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last">
+                        <small>Last</small>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label><strong>Email <span class="red-asterisk">*</span></strong></label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label><strong>Your Experience <span class="red-asterisk">*</span></strong></label>
+                <div class="star-rating">
+                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Overall, how would you rate your experience with us?</label>
+               
+            </div>
+            <div class="form-group">
+                <label><strong>How satisfied are you with <span class="red-asterisk">*</span></strong></label>
+                <table class="table table-bordered survey-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Very Unsatisfied</th>
+                            <th>Unsatisfied</th>
+                            <th>Neutral</th>
+                            <th>Satisfied</th>
+                            <th>Very Satisfied</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Purchase</th>
+                            <td><input type="radio" name="purchase"></td>
+                            <td><input type="radio" name="purchase"></td>
+                            <td><input type="radio" name="purchase"></td>
+                            <td><input type="radio" name="purchase"></td>
+                            <td><input type="radio" name="purchase"></td>
+                        </tr>
+                        <tr>
+                            <th>Service</th>
+                            <td><input type="radio" name="service"></td>
+                            <td><input type="radio" name="service"></td>
+                            <td><input type="radio" name="service"></td>
+                            <td><input type="radio" name="service"></td>
+                            <td><input type="radio" name="service"></td>
+                        </tr>
+                        <tr>
+                            <th>Company Overall</th>
+                            <td><input type="radio" name="company"></td>
+                            <td><input type="radio" name="company"></td>
+                            <td><input type="radio" name="company"></td>
+                            <td><input type="radio" name="company"></td>
+                            <td><input type="radio" name="company"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-group">
+                <label><strong>How likely are you to <span class="red-asterisk">*</span></strong></label>
+                <table class="table table-bordered survey-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Very Unlikely</th>
+                            <th>Unlikely</th>
+                            <th>Neutral</th>
+                            <th>Likely</th>
+                            <th>Very Likely</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Buy from us again</th>
+                            <td><input type="radio" name="buy_again"></td>
+                            <td><input type="radio" name="buy_again"></td>
+                            <td><input type="radio" name="buy_again"></td>
+                            <td><input type="radio" name="buy_again"></td>
+                            <td><input type="radio" name="buy_again"></td>
+                        </tr>
+                        <tr>
+                            <th>Recommend our product to others</th>
+                            <td><input type="radio" name="recommend_product"></td>
+                            <td><input type="radio" name="recommend_product"></td>
+                            <td><input type="radio" name="recommend_product"></td>
+                            <td><input type="radio" name="recommend_product"></td>
+                            <td><input type="radio" name="recommend_product"></td>
+                        </tr>
+                        <tr>
+                            <th>Recommend our company to others</th>
+                            <td><input type="radio" name="recommend_company"></td>
+                            <td><input type="radio" name="recommend_company"></td>
+                            <td><input type="radio" name="recommend_company"></td>
+                            <td><input type="radio" name="recommend_company"></td>
+                            <td><input type="radio" name="recommend_company"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-group">
+                <label><strong>Additional comments or suggestions</strong></label>
+                <textarea class="form-control comments-box"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
